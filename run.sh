@@ -2,7 +2,7 @@
 # Launcher script for Home Backup TUI
 set -e
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPT_DIR="$(dirname "$(realpath "${BASH_SOURCE[0]}")")"
 VENV_DIR="$SCRIPT_DIR/.venv"
 
 # Create virtual environment if it doesn't exist
